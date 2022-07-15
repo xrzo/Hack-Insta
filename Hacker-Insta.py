@@ -25,7 +25,12 @@ bot = telebot.TeleBot(ToKen)
 @bot.message_handler(commands=['start'])
 def start_message(message):
     first = message.from_user.username
-    bot.send_message(message.chat.id,f"Welcome @{first} ,type /check ")
+    bot.send_message(message.chat.id,f"اهلا @{first} ,    بُكَ فِيُ بُۅتِ صِيُډ يُۅࢪِ࣪ࢪاެتِ تِيُݪيُجَࢪاެمِ
+اެݪبُۅتِ مِډفِۅعٰ ۅݪيُسُ مِجَاެنِيُ اެضِغِطَ /TXN
+ݪكَيُ اެتِحِقِقِ هَݪ اެنِتِ مِشِتِࢪكَ فِيُ اެݪبُۅتِ ❤️‍🔥
+___
+
+اެنِ كَنِتِ ݪسُتِ مِشِتِࢪكَ ࢪاެسُݪ اެݪمِطَۅࢪ @S_Y_W ݪكَيُ يُفِعٰݪ ݪكَ اެݪاެشِتِࢪاެكَ بُمِقِاެبُݪ بُسُيُطَ جَډاެ ❤️‍🔥 /check ")
 
 
     
@@ -80,7 +85,7 @@ P2 = types.InlineKeyboardButton(text = "🇹🇷 TURKEY : تركيا", callback_
 P3 = types.InlineKeyboardButton(text = "🇪🇬 EGYPT :  مصر", callback_data = 'EG')
 P4 = types.InlineKeyboardButton(text = "🇰🇼 KUWAIT : الكويت", callback_data = 'Ku')
 P5 = types.InlineKeyboardButton(text = "🇸🇦 SAUDIA : السعودية", callback_data = 'SA')
-P6 = types.InlineKeyboardButton(text = "يوزرات رباعية : users 4",callback_data = 'Mo')
+P6 = types.InlineKeyboardButton(text = "يوزرات رباعية",callback_data = 'Mo')
 def button(message):
     O0 = types.InlineKeyboardMarkup(row_width=1)
     O0.add(P6,P,P1,P2,P3,P4,P5)
