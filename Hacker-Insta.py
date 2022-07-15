@@ -49,10 +49,13 @@ def Start(message):
 		""".format(Name,User,ID) , parse_mode = "markdown" , reply_markup = A)
 	 else:
 			bot.reply_to(message,f'''
-			حب انت ممشترك 
+		        اسف يروحي انت ما مشترك بلبوت
+للتفعيل اسبوع في البوت مقابل 2 ارقام تليجرام
+تريد تفعل اسبوعين 3 ارقم تليجرام
+تريد تفعل شهر 5 ارقام تليجرام
+اقبل مقابلات أي شي فقط تواصل @E_4_1 
 ''')
-	 
-	
+	 	
 @bot.callback_query_handler(func=lambda call: True)
 def answer(call):
     if call.data =="y":
