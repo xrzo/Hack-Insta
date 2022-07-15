@@ -25,10 +25,7 @@ bot = telebot.TeleBot(ToKen)
 @bot.message_handler(commands=['start'])
 def start_message(message):
     first = message.from_user.username
-    url = 'https://t.me/N1111V/3'
-    bot.send_animation((message.chat.id), url, caption=f"""اهلا {first}
-اكتب /check لفحص اشتراكك
-""", reply_to_message_id=(message.message_id))
+    bot.send_message(message.chat.id,f"Welcome @{first} ,type /check ")
 
 
     
