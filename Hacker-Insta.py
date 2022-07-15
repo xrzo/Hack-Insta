@@ -19,7 +19,7 @@ E = '\033[1;31m' #احمر
 C = "\033[1;97m" #ابيض
 
 
-ToKen = "5554983256:AAFdqhzgehO5RwCc0e1XlmveBd9Rk8EIPa4"
+ToKen = "5556991334:AAHCwDPazkuPXH_lpWWPNB59xm-NkR28Sas"
 admin=[5244755240,254264270,1403347605,5374908156]
 bot = telebot.TeleBot(ToKen)
 @bot.message_handler(commands=['start'])
@@ -37,7 +37,7 @@ def Start(message):
 	 	User = message.from_user.username 
 	 	ID = message.chat.id
 	 	A = types.InlineKeyboardMarkup(row_width=1)
-	 	B = types.InlineKeyboardButton(text =" المبرمج " , url = "t.me/Dar4k")
+	 	B = types.InlineKeyboardButton(text =" المبرمج " , url = "t.me/S_Y_W")
 	 	C =  types.InlineKeyboardButton(text = "✅ START HACK",callback_data="y")
 	 	A.add(B,C)
 	 	bot.reply_to(message, """  
