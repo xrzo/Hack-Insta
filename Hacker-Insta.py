@@ -21,7 +21,7 @@ C = "\033[1;97m" #ابيض
 
 ToKen = ("5554983256:AAFdqhzgehO5RwCc0e1XlmveBd9Rk8EIPa4")
 admin=[5244755240,254264270]
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(Token)
 @bot.message_handler(commands=['start'])
 def start_message(message):
     first = message.from_user.first_name
