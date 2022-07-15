@@ -51,7 +51,7 @@ def Start(message):
 		- ايديك : [ {} ]                                        *
 		""".format(Name,User,ID) , parse_mode = "markdown" , reply_markup = A)
 	 else:
-			bot.reaply_to(message,f'''
+			bot.reply_to(message,f'''
 			حب انت ممشترك 
 ''')
 	 
