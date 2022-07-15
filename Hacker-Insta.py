@@ -49,11 +49,13 @@ def Start(message):
 		- قم بــ ضغط على ( START HACK ) لبدء الصيد               
 		- معرفك : [ @{} ]                                    
 		- ايديك : [ {} ]                                        *
-		""".format(Name,User,ID) , parse_mode = "markdown" , reply_markup = A)	
-		else :
+		""".format(Name,User,ID) , parse_mode = "markdown" , reply_markup = A)
+	 else:
 			bot.reaply_to(message,f'''
 			حب انت ممشترك 
 ''')
+	 
+	
 @bot.callback_query_handler(func=lambda call: True)
 def answer(call):
     if call.data =="y":
