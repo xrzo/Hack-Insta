@@ -21,7 +21,7 @@ C = "\033[1;97m" #ابيض
 
 ToKen = ("5554983256:AAFdqhzgehO5RwCc0e1XlmveBd9Rk8EIPa4")
 admin=[5244755240,254264270]
-
+bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
 def start_message(message):
     first = message.from_user.first_name
@@ -35,27 +35,27 @@ ___
 
 اެنِ كَنِتِ ݪسُتِ مِشِتِࢪكَ ࢪاެسُݪ اެݪمِطَۅࢪ @E_4_1 ݪكَيُ يُفِعٰݪ ݪكَ اެݪاެشِتِࢪاެكَ بُمِقِاެبُݪ بُسُيُطَ جَډاެ ❤️‍🔥""", reply_to_message_id=(message.message_id))
 
-@bot.message_handler(commands=['TXN','txn','Txn'])
-def hamo(message):
-    if message.from_user.id in admin:
-bot = telebot.TeleBot(ToKen)
+
+    
+
 @bot.message_handler(commands = ["TXN"])
 def Start(message):
- Name = message.chat.first_name
- User = message.from_user.username 
- ID = message.chat.id
- A = types.InlineKeyboardMarkup(row_width=2)
- B = types.InlineKeyboardButton(text ="✅ قناه المبرمج" , url = "t.me/ToOlsCaRiNo")
- C = types.InlineKeyboardButton(text ="✅ مراسة مبرمج  " , url = "t.me/RRN3R")
- D =  types.InlineKeyboardButton(text = "✅ START HACK",callback_data="y")
- A.add(B,C,D)
- bot.reply_to(message, """  
-*- اهلا عزيزي ( {} )                             
-- في بوت صيد  حسابات ( Intagram )✅
-- قم بــ ضغط على ( START HACK ) لبدء الصيد               
-- معرفك : [ @{} ]                                    
-- ايديك : [ {} ]                                        *
-""".format(Name,User,ID) , parse_mode = "markdown" , reply_markup = A)	
+	 if message.from_user.id in admin:
+	 	Name = message.chat.first_name
+	 	User = message.from_user.username 
+	 	ID = message.chat.id
+	 	A = types.InlineKeyboardMarkup(row_width=2)
+	 	B = types.InlineKeyboardButton(text ="✅ قناه المبرمج" , url = "t.me/ToOlsCaRiNo")
+	 	C = types.InlineKeyboardButton(text ="✅ مراسة مبرمج  " , url = "t.me/RRN3R")
+	 	D =  types.InlineKeyboardButton(text = "✅ START HACK",callback_data="y")
+	 	A.add(B,C,D)
+	 	bot.reply_to(message, """  
+		*- اهلا عزيزي ( {} )                             
+		- في بوت صيد  حسابات ( Intagram )✅
+		- قم بــ ضغط على ( START HACK ) لبدء الصيد               
+		- معرفك : [ @{} ]                                    
+		- ايديك : [ {} ]                                        *
+		""".format(Name,User,ID) , parse_mode = "markdown" , reply_markup = A)	
 @bot.callback_query_handler(func=lambda call: True)
 def answer(call):
     if call.data =="y":
