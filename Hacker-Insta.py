@@ -783,3 +783,6 @@ def Morocco(message):
 def sss1(message):
     bot.edit_message_text(chat_id=message.chat.id,message_id=message.message_id,text="<strong>✅ حسناً ارسل حساب انستا ليتم فحصه بـ نمط\nuser:paas</strong>",parse_mode="html")		
 bot.polling(True)
+
+
+#badt
